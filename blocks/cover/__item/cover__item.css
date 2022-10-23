@@ -16,7 +16,25 @@
   z-index: 1;
 }
 
-.cover__item::before{
+@media screen and (max-width: 1124px) {
+  .cover__item {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .cover__item {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .cover__item {
+    min-height: 200px;
+  }
+}
+
+.cover__item::before {
   content: "";
   background-color: #2a2c2f;
   opacity: 0.3;

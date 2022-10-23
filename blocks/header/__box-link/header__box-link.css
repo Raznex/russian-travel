@@ -1,0 +1,19 @@
+.header__box-link {
+  display: flex;
+  margin: 46px 48px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 924px){
+.header__box-link{
+  margin-right: 24px;
+}
+}
+
+@media  screen and (max-width: 568px) {
+  .header__box-link{
+   margin-top: 30px;
+   margin-right: 16px;
+  }
+}
