@@ -1,0 +1,12 @@
+.place__paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+@media screen and (max-width: 460px) {
+  .place__paragraphs {
+    padding: 0 16px;
+  }
+}
