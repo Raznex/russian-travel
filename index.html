@@ -12,12 +12,10 @@
   <body class="page">
     <header class="header">
       <img src="./images/header__logo.svg" alt="Логотип" class="header__logo">
-      <nav class="header__box-link">
-        <a href="#" class="header__lang-link header__lang-link_button_active"
-          >Ru</a
-        >
+      <div class="header__box-link">
+        <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
         <a href="#" class="header__lang-link">En</a>
-      </nav>
+      </div>
     </header>
     <main class="content page__content">
       <section class="lead content__section">
@@ -25,14 +23,14 @@
         <p class="lead__subtitle">
           Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.
         </p>
-        <div>
+        <figure class="lead__figcapture">
           <img
             src="./images/lead__image.jpg"
             alt="Маршрут"
             class="lead__image"
           >
-          <p class="lead__caption">ваша полка — верхняя</p>
-        </div>
+          <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+        </figure>
       </section>
       <section class="intro content__section">
         <h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
@@ -51,44 +49,27 @@
           интересные места, достойные вашего отпуска.
         </p>
         <ul class="intro__list">
-          <li>
-            <p class="intro__enumeration">
-              <span class="intro__enumeration intro__enumeration_span"
-                >Часовых поясов </span
-              >11
-            </p>
+          <li class="intro__enumeration">
+            <span class="intro__span">Часовых поясов </span>11
           </li>
-          <li>
-            <p class="intro__enumeration">
-              <span class="intro__enumeration intro__enumeration_span"
-                >Объектов природного наследия ЮНЕСКО </span
-              >12
-            </p>
+          <li class="intro__enumeration">
+            <span class="intro__span">Объектов природного наследия ЮНЕСКО </span
+            >12
           </li>
-          <li>
-            <p class="intro__enumeration">
-              <span class="intro__enumeration intro__enumeration_span"
-                >Объектов культурного наследия ЮНЕСКО </span
-              >16
-            </p>
+          <li class="intro__enumeration">
+            <span class="intro__span"
+              >Объектов культурного наследия ЮНЕСКО </span
+            >16
           </li>
-          <li>
-            <p class="intro__enumeration">
-              <span class="intro__enumeration intro__enumeration_span"
-                >Природных заповедников </span
-              >105
-            </p>
+          <li class="intro__enumeration">
+            <span class="intro__span">Природных заповедников </span>105
           </li>
-          <li>
-            <p class="intro__enumeration">
-              <span class="intro__enumeration intro__enumeration_span"
-                >Аэропортов </span
-              >241
-            </p>
+          <li class="intro__enumeration">
+            <span class="intro__span">Аэропортов </span>241
           </li>
         </ul>
       </section>
-      <div class="photo-grid content__section">
+      <section class="photo-grid content__section">
         <img
           src="./images/photo__item-1.jpg"
           alt="Поезд"
@@ -149,12 +130,12 @@
           alt="Облачная гора"
           class="photo-grid__image"
         >
-      </div>
+      </section>
       <section class="places content__section">
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <p class="place__url-heading">url</p>
             <a href="http://park-kosa.ru" target="_blank" class="place__link"
               >park-kosa.ru</a
             >
@@ -182,8 +163,8 @@
               прохладного моря.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -217,8 +198,8 @@
               начинает сбываться с&nbsp;билетом в&nbsp;Мурманск.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -251,8 +232,8 @@
               манулы&nbsp;&mdash; тоже обитатели Алтайского края.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -284,8 +265,8 @@
               197.011&nbsp;км/ч.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -313,7 +294,7 @@
               Чтобы все знали, кто тут хозяин.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="cover content__section">
         <a
@@ -332,42 +313,50 @@
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer__links">
-        <li>
-          <a href="https://yandex.ru/maps" target="_blank" class="footer__link"
-            >Карты</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://yandex.ru/pogoda"
-            target="_blank"
-            class="footer__link"
-            >Погода
-          </a>
-        </li>
-        <li>
-          <a href="https://rasp.yandex.ru" target="_blank" class="footer__link"
-            >Расписание
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://calendar.yandex.ru"
-            target="_blank"
-            class="footer__link"
-            >Календарь
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://travel.yandex.ru"
-            target="_blank"
-            class="footer__link"
-            >Путешествия
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="footer__links">
+          <li>
+            <a
+              href="https://yandex.ru/maps"
+              target="_blank"
+              class="footer__link"
+              >Карты</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://yandex.ru/pogoda"
+              target="_blank"
+              class="footer__link"
+              >Погода
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://rasp.yandex.ru"
+              target="_blank"
+              class="footer__link"
+              >Расписание
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://calendar.yandex.ru"
+              target="_blank"
+              class="footer__link"
+              >Календарь
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://travel.yandex.ru"
+              target="_blank"
+              class="footer__link"
+              >Путешествия
+            </a>
+          </li>
+        </ul>
+      </nav>
       <p class="footer__copyright">&copy; 2022. Бурковецкий Андрей</p>
     </footer>
   </body>
